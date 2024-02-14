@@ -1,0 +1,266 @@
+/*Media query Navegatin*/
+/* Media query for 1024px screens */
+@media (max-width: 1366px) {
+  herder h1 {
+    right: 50%;
+  }
+  .nav-button, .closebtn {
+    display: none;
+  }
+}
+
+/* Media query for 768px screens */
+@media (max-width: 768px) {
+  
+  .overlay .linkPrimarary, .overlay .linkSecundary .search-box, .overlay .linkSecundary .linkSecundary-button {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-button {
+    border: 0;
+    border-radius: .4rem;
+    padding: .8rem;
+    background-color: transparent;
+    margin: .8rem;
+    cursor: pointer;
+  }
+
+  .nav-button i {
+    color: #fff;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    /*background-color: rgb(0, 0, 0);*/
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden; 
+    transition: all 0.5s;   
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 2%;
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .overlay a {
+    padding: .8rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #818181;   
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus  {
+    color: #f1f1f1;
+  }
+  .overlay .closebtn {
+    top: 3.5rem;
+    right: 4.5rem;
+    font-size: 6rem;
+  }
+
+
+  @media screen and (max-height: 375px) {
+    .overlay a {
+      font-size: 1.5rem;
+    }
+    .overlay, .closebtn {
+      font-size: 1.5rem;
+      top: 1.5rem;
+      right: 2.5rem;
+    }
+  }
+
+  .overlay-prodoct {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 1.6rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: .4rem .2rem;
+  border-radius: 2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: var(--color-bt);
+  padding-bottom: 2rem;
+  }
+}
+  
+
+/* Media query for 375px screens */
+@media (max-width: 375px) {
+  .navegation {
+    margin-bottom: 3rem;
+  }
+
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  .herder h1 {
+    font-size: 1.8em;
+  }
+}
+
+
+/*Media query Geral*/
+/* Media query for 1024px screens */
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .footerLink {
+    gap: 20rem;
+}
+}
+/* Media query for 768px screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Media query for 375px screens */
+@media (max-width: 375px) {
+  .herder h1 {
+    font-size: 1.8rem;
+  }
+  
+  .about h2 {
+    font-size: 1.4rem;
+    padding: 2.6rem 0 1.3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding-top: 1.6rem;
+  }
+
+  .termo .ultimo {
+    padding-bottom: 1.6rem;
+  }
+}
+
+/*Media query do Footer*/
+
+/* Media query for 1024px screens */
+@media (max-width: 1024px) {
+  .footer section {
+    min-width: auto;
+  }
+
+  .footerLogo {
+    width: 80%; /* Adjust the width as needed */
+  }
+
+  .footerLink {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+/* Media query for 768px screens */
+@media (max-width: 768px) {
+  .footer section {
+    min-width: auto;
+  }
+
+  .footerLogo {
+    width: 90%; /* Adjust the width as needed */
+  }
+
+  .footerSocial {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer .footerLink {
+    gap: 9rem; /* Adjust the gap as needed */
+  }
+}
+
+/* Media query for 375px screens */
+@media (max-width: 375px) {
+  .footer section {
+    padding: 1.5rem 0.5rem; /* Adjust the padding for smaller screens */
+  }
+
+  .footerLogo {
+    width: 30%; /* Adjust the width for smaller screens */
+  }
+
+  .footerSocial {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footerTitler {
+    font-size: 1.5rem; /* Adjust the font size for smaller screens */
+    line-height: 1.8rem; /* Adjust the line height for smaller screens */
+  }
+
+  .footer .footerLink {
+    gap: 2rem; /* Adjust the gap for smaller screens */
+    text-align: center;
+    padding-right: 1rem;
+  }
+  .footerLinkPage {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    
+  }
+
+  .footer .footerLink .footerLinkPage h2 {
+    font-size: 1.6rem; /* Adjust the font size for smaller screens */
+    padding-right: 1rem;
+  }
+
+  .footerLink .footerLinkPage ul li a {
+    font-size: 1.3rem; /* Adjust the font size for smaller screens */
+    line-height: 1.5rem; /* Adjust the line height for smaller screens */
+  }
+
+  .footerLink .footerLinkPage ul {
+    text-align: center;
+  }
+
+  .footerDisclaimer {
+    font-size: 1rem; /* Adjust the font size for smaller screens */
+    line-height: 1.2rem; /* Adjust the line height for smaller screens */
+  }
+}

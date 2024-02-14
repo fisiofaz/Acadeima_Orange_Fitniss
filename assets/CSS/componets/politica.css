@@ -1,0 +1,32 @@
+.imgPriv {
+  width: 100%;
+}
+
+.privacyPolicy {
+  background-color:  #fff;
+  padding: 4.5rem 0;
+}
+
+.privacyPolicy p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--color-icon);
+  padding-top: 2rem;
+  text-align: justify;
+  margin: 2rem;
+}
+
+.privacyPolicy-itens {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+  gap: 1rem;
+  padding: 2rem;
+  
+}
+.privacyPolicy-itens li {
+ list-style-type: circle;
+ color: var(--color-icon);
+ margin-left: 2rem;
+}
